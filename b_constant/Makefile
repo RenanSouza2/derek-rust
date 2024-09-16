@@ -1,10 +1,8 @@
-run r: main
-	./main
+run r: 
+	cargo run
 
-build b: main
-
-main: src/main.rs
-	rustc $^
+build b:
+	cargo build
 
 .PHONY: clean c
 clean c:
