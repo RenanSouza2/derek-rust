@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "b_constant"
+name = "c_types"
 version = "0.1.0"
