@@ -7,3 +7,7 @@ build b:
 .PHONY: clean c
 clean c:
 	cargo clean
+
+.PHONY: fmt f
+fmt f:
+	cargo fmt

@@ -6,7 +6,7 @@ fn main() {
     let _second = &vec2[1];
     match vec2.get(1) {
         Some(second) => println!("2nd : {}", second),
-        None => println!("No 2nd value")
+        None => println!("No 2nd value"),
     }
 
     for i in &mut vec2 {

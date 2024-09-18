@@ -12,7 +12,7 @@ fn main() {
 
     println!("Length: {}", heroes.len());
 
-    if heroes.contains_key("Batman"){
+    if heroes.contains_key("Batman") {
         let the_batman = heroes.get("Batman");
         match the_batman {
             Some(_x) => println!("Batman is a hero"),

@@ -3,7 +3,7 @@ fn say_hello() {
 }
 
 fn get_sum(x: i32, y: i32) {
-    println!("{} + {} = {}", x, y, x+y);
+    println!("{} + {} = {}", x, y, x + y);
 }
 
 fn get_sum_2(x: i32, y: i32) -> i32 {
@@ -15,7 +15,7 @@ fn get_sum_3(x: i32, y: i32) -> i32 {
 }
 
 fn get_2(x: i32) -> (i32, i32) {
-    return (x+1, x+2);
+    return (x + 1, x + 2);
 }
 
 fn sum_vec(vec: &[i32]) -> i32 {

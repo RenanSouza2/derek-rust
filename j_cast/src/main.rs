@@ -1,13 +1,19 @@
 fn main() {
     enum Day {
-        Monday, _Tuesday, _Wedneday, _Thursday, _Friday, _Saturday, _Sunday
+        Monday,
+        _Tuesday,
+        _Wedneday,
+        _Thursday,
+        _Friday,
+        _Saturday,
+        _Sunday,
     }
 
     impl Day {
         fn is_weekend(&self) -> bool {
             match self {
                 Day::_Saturday | Day::_Sunday => true,
-                _ => false
+                _ => false,
             }
         }
     }

@@ -20,8 +20,8 @@ fn main() {
         _height: U,
     }
     let _rec = Rectangle1 {
-        _length: 4, 
-        _height: 10.5
+        _length: 4,
+        _height: 10.5,
     };
 
     trait Shape {
@@ -29,12 +29,18 @@ fn main() {
         fn area(&self) -> f32;
     }
 
-    struct  Rectangle {length: f32, width: f32}
-    struct Ellipse {length: f32, width: f32}
+    struct Rectangle {
+        length: f32,
+        width: f32,
+    }
+    struct Ellipse {
+        length: f32,
+        width: f32,
+    }
 
     impl Shape for Rectangle {
         fn new(length: f32, width: f32) -> Rectangle {
-            return Rectangle{length, width};
+            return Rectangle { length, width };
         }
         fn area(&self) -> f32 {
             self.length * self.width
@@ -43,7 +49,7 @@ fn main() {
 
     impl Shape for Ellipse {
         fn new(length: f32, width: f32) -> Ellipse {
-            return Ellipse{length, width};
+            return Ellipse { length, width };
         }
         fn area(&self) -> f32 {
             self.length * self.width * PI / 4.0
@@ -54,5 +60,4 @@ fn main() {
     let circ: Ellipse = Shape::new(10.0, 10.0);
     println!("Rec Are : {}", rec.area());
     println!("Circ Are : {}", circ.area());
-
 }

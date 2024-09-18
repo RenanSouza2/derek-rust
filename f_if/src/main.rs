@@ -13,11 +13,7 @@ fn main() {
     }
 
     let mut my_age = 47;
-    let can_vote = if my_age >= 18 {
-        true
-    } else {
-        false
-    };
+    let can_vote = if my_age >= 18 { true } else { false };
     println!("Can vote : {}", can_vote);
 
     my_age = 18;
@@ -25,7 +21,7 @@ fn main() {
         1..19 => print!("Important Birthday"),
         21 | 50 => println!("Almost Important Birthday"),
         65..=i32::MAX => println!("Less Important Birthday"),
-        _ => println!("Not an Important Birthday")
+        _ => println!("Not an Important Birthday"),
     };
 
     my_age = 18;
