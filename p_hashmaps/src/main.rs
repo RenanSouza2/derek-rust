@@ -15,7 +15,7 @@ fn main() {
     if heroes.contains_key("Batman"){
         let the_batman = heroes.get("Batman");
         match the_batman {
-            Some(x) => println!("Batman is a hero"),
+            Some(_x) => println!("Batman is a hero"),
             None => println!("Batman is not a hero"),
         }
     }

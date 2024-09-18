@@ -1,4 +1,4 @@
-fn print_str(x: String) {
+fn _print_str(x: String) {
     println!("A string {}", x);
 }
 
@@ -13,9 +13,9 @@ fn change_string(name:&mut String) {
 }
 
 fn main() {
-    let str1 = String::from("world");
-    let str2 = str1.clone();
-    let str3 = print_return_str(str1);
+    let  str1 = String::from("world");
+    let _str2 = str1.clone();
+    let  str3 = print_return_str(str1);
     println!("str3 : {}", str3);
 
     let mut str4 = String::from("Renan");

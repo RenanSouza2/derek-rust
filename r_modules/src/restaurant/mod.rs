@@ -1,15 +1,15 @@
 mod pizza_order {
     pub struct Pizza {
-        pub dough: String,
-        pub cheese: String,
+        pub _dough: String,
+        pub _cheese: String,
         pub topping: String,
     }
 
     impl Pizza {
         pub fn lunch(topping: &str) -> Pizza {
             Pizza {
-                dough: String::from("regular dough"),
-                cheese: String::from("mozzarella"),
+                _dough: String::from("regular dough"),
+                _cheese: String::from("mozzarella"),
                 topping: String::from(topping)
             }
         }

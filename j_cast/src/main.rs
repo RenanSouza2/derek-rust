@@ -1,12 +1,12 @@
 fn main() {
     enum Day {
-        Monday, Tuesday, Wedneday, Thursday, Friday, Saturday, Sunday
+        Monday, _Tuesday, _Wedneday, _Thursday, _Friday, _Saturday, _Sunday
     }
 
     impl Day {
         fn is_weekend(&self) -> bool {
             match self {
-                Day::Saturday | Day::Sunday => true,
+                Day::_Saturday | Day::_Sunday => true,
                 _ => false
             }
         }
@@ -14,12 +14,12 @@ fn main() {
     let today = Day::Monday;
     match today {
         Day::Monday => println!("Everyone hates Monday"),
-        Day::Tuesday => println!("Donut day"),
-        Day::Wedneday => println!("Hump day"),
-        Day::Thursday => println!("Pay day"),
-        Day::Friday => println!("Almost Weekend"),
-        Day::Saturday => println!("Weekend"),
-        Day::Sunday => println!("Weekend"),
+        Day::_Tuesday => println!("Donut day"),
+        Day::_Wedneday => println!("Hump day"),
+        Day::_Thursday => println!("Pay day"),
+        Day::_Friday => println!("Almost Weekend"),
+        Day::_Saturday => println!("Weekend"),
+        Day::_Sunday => println!("Weekend"),
     }
 
     println!("Is today the weekend : {}", today.is_weekend());
